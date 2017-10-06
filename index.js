@@ -19,7 +19,7 @@ const set = (key, value) => {
  * Raises an error if the file env.yml does not exist
  */
 fs.readFile('./env.yml', 'utf8', (err, data) => {
-  if (err) throw new Error('ENV: the file env.yml does not exist. Please create one at the root of your application.')
+  if (err) throw new Error('Barricade: the file env.yml does not exist. Please create one at the root of your application.')
 
   // Parse the YAML file
   const env = yaml.parse(data)
