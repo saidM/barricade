@@ -1,0 +1,33 @@
+{
+  "name": "barricade",
+  "version": "1.0.0",
+  "description": "Load environment variables from env.yml file (works for dev, test & production)",
+  "main": "index.js",
+  "scripts": {
+    "test": "NODE_ENV=test mocha test"
+  },
+  "keywords": [
+    "environment",
+    "variable",
+    "env",
+    "variable",
+    "config",
+    "variable",
+    "node",
+    "env",
+    "dotenv",
+    "figaro",
+    "secrets",
+    "env variable",
+    "barricade"
+  ],
+  "author": "Saïd Mimouni <sayid.mimouni@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "yamljs": "^0.3.0"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^4.0.0"
+  }
+}
