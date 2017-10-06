@@ -1,5 +1,9 @@
 # Barricade
 
+[![Build Status](https://travis-ci.org/saidM/barricade.svg?branch=master)](https://travis-ci.org/saidM/barricade) [![NPM Downloads](https://img.shields.io/npm/dt/barricade.svg)](https://www.npmjs.com/package/barricade) [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/saidM/barricade)
+
+[![NPM](https://nodei.co/npm/barricade.png?downloads=true)](https://nodei.co/npm/tvdb.js/)
+
 Barricade is a small library that allows you to setup environment variable from a single `env.yml` file. It parses the YAML file and loads all of the configuration values into the `process.env` object.
 
 It has built-in support for multiple NODE_ENV.
