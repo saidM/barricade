@@ -6,43 +6,47 @@ It has built-in support for multiple NODE_ENV.
 
 ## Installation
 
-npm install --save barricade
+    npm install --save barricade
 
 ## Usage
 
 Add the following line at the top of your application JS file:
 
-   require('barricade')
-
+```javascript
+ require('barricade')
+ ```
+ 
 The library expects a YAML file (`env.yml`) at the root of your application. Given the following YAML file:
 
-   # env.yml
+```yaml
+# env.yml
 
-   APP_SECRET: hello_world
-   STRIPE_SECRET_KEY: secret_key_for_both_development_and_test
+APP_SECRET: hello_world
+STRIPE_SECRET_KEY: secret_key_for_both_development_and_test
 
-   production:
-    STRIPE_SECRET_KEY: secret_key_used_only_in_production
+production:
+    STRIPE_SECRET_KEY: secret_key_used_only_in_production
+````
 
 You can then start your application and access those values from the `process.env` object. Example:
 
-    // index.js
+```javascript
+// index.js
 
-    require('barricade')
+require('barricade')
 
-    console.log(process.env.APP_SECRET) // hello_world
-    console.log(process.env.STRIPE_SECRET_KEY) // secret_key_for_both_development_and_test
+console.log(process.env.APP_SECRET) // hello_world
+console.log(process.env.STRIPE_SECRET_KEY) // secret_key_for_both_development_and_test
 
-    // Switch the Node environment to production
-    process.env.NODE_ENV = 'production'
+// Switch the Node environment to production
+process.env.NODE_ENV = 'production'
 
-    console.log(process.env.STRIPE_SECRET_KEY) // secret_key_used_only_in_production
+console.log(process.env.STRIPE_SECRET_KEY) // secret_key_used_only_in_production
+```
 
 ## Security
 
-I strongly recommand that you do not commit your `env.yml` to version control. To avoid doing so, you can edit your `.gitignore` file:
-
-    # .gitignore
+I strongly recommand that you do not commit your `env.yml` file to version control. To avoid doing so, you can add the following line to your `.gitignore` file:
 
     env.yml
 
