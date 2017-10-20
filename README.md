@@ -1,8 +1,8 @@
 # Barricade
 
-[![Build Status](https://travis-ci.org/saidM/barricade.svg?branch=master)](https://travis-ci.org/saidM/barricade) [![NPM Downloads](https://img.shields.io/npm/dt/barricade.svg)](https://www.npmjs.com/package/barricade) [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/saidM/barricade)
+[![Build Status](https://travis-ci.org/saidM/barricade.svg?branch=master)](https://travis-ci.org/saidM/barricade) [![NPM Downloads](https://img.shields.io/npm/dt/barricade.svg)](https://www.npmjs.com/package/barricade) [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/saidM/barricade) [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/saidM/barricade)
 
-[![NPM](https://nodei.co/npm/barricade.png?downloads=true)](https://nodei.co/npm/tvdb.js/)
+[![NPM](https://nodei.co/npm/barricade.png?downloads=true)](https://nodei.co/npm/barricade)
 
 Barricade is a small library that allows you to setup environment variable from a single `env.yml` file. It parses the YAML file and loads all of the configuration values into the `process.env` object.
 
@@ -47,12 +47,6 @@ process.env.NODE_ENV = 'production'
 
 console.log(process.env.STRIPE_SECRET_KEY) // secret_key_used_only_in_production
 ```
-
-## Security
-
-I strongly recommand that you do not commit your `env.yml` file to version control. To avoid doing so, you can add the following line to your `.gitignore` file:
-
-    env.yml
 
 ## Licence
 
