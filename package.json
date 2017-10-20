@@ -1,6 +1,6 @@
 {
   "name": "barricade",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Load environment variables from env.yml file (works for dev, test & production)",
   "main": "index.js",
   "scripts": {
